@@ -24,7 +24,7 @@ Create a program that asks the user how many pets they have. Once you know how m
 
 ### Part 2: 
 
-Create a Pet class, and a subclass for each type of pet that you want your program to support. Your classes should follow the following requirements:
+Cre~~~~ate a Pet class, and a subclass for each type of pet that you want your program to support. Your classes should follow the following requirements:
 
 - You must support at least three types of pets.
 - Dog must be one of the types you support.

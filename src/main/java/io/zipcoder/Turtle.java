@@ -5,8 +5,13 @@ import java.util.Comparator;
 
 public class Turtle extends Pet {
 
-    public Turtle(String name){
-        super(name);
+    public Turtle() {
+        this.name = "";
+        this.type =  "";
+    }
+
+    public Turtle(String name, String type){
+        super(name, type);
     }
 
     //"Roar" because turtles are my favorite animal lol

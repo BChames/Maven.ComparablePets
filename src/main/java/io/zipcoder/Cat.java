@@ -5,15 +5,20 @@ import java.lang.Comparable;
 
 public class Cat extends Pet {
 
-    public Cat(String name){
-        super(name);
+    public Cat() {
+        this.name = "";
+        this.type =  "";
     }
+
+    public Cat(String name, String type){
+        super(name, type);
+    }
+
+
 
     @Override
     public String speak(){
         return "MEOOOOOOOOOOWWWW!!!!!!!!!";
     }
 
-    public void sortByName(){
-    }
 }

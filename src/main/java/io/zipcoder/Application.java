@@ -21,6 +21,7 @@ public class Application {
 
         for(int i = 0; i < amountOfPets; i++){
             pet.setName(getPetNameInput("What is your pets name? Enter it now!!"));
+            pet.setType(getPetTypeInput("What is your pets type? Enter it now!!"));
             userPets.add(pet);
 
             System.out.println(userPets.get(i).getName());
@@ -39,6 +40,11 @@ public class Application {
         return scanner.nextLine();
     }
 
+    public static String getPetType(){
+        System.out.println("What is your pets type? Enter it now!!");
+        return scanner.nextLine();
+    }
+
     public static String getPetNameInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(prompt);
@@ -46,6 +52,11 @@ public class Application {
         return userInput;
     }
 
-    public void sortByName(){
+    public static String getPetTypeInput(String prompt) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(prompt);
+        String userInput = scanner.nextLine();
+        return userInput;
     }
+
 }
